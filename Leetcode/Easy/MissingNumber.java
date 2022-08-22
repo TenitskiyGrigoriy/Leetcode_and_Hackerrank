@@ -9,8 +9,8 @@ public class MissingNumber {
     public int missingNumber(int[] nums) {
         int sum = 0;
         int expected = (1 + nums.length) * nums.length / 2;
-        for (int num : nums) {
-            sum += num;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
         }
         return expected - sum;
     }
