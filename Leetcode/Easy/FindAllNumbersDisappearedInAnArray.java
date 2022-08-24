@@ -10,7 +10,7 @@ import java.util.List;
 
 public class FindAllNumbersDisappearedInAnArray {
     public List<Integer> findDisappearedNumbers(int[] nums) {
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
             int ret = Math.abs(nums[i]) - 1;
             if (nums[ret] > 0) {
