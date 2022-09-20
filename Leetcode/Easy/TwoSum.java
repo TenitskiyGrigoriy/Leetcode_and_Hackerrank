@@ -20,7 +20,6 @@ public class TwoSum {
             if (map.containsKey(target - nums[i])) {
                 return new int[] {i, map.get(target - nums[i]) };
             }
-
             map.put(nums[i], i);
         }
 
