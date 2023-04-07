@@ -8,14 +8,19 @@ package Leetcode_and_Hackerrank.Leetcode.Easy;
  */
 public class SearchInsertPosition {
     public int searchInsert(int[] nums, int target) {
-        int i;
-        for (i = 1; i < nums.length; i++) {
-            if (nums[i] == target) {
-                return i;
-            } else if (nums[i - 1] > target && nums[i] < target) {
-                return i;
+        int startIndex = 0;
+        int endIndex = nums.length - 1;
+
+        while (startIndex <= endIndex) {
+            int middleIndex = startIndex + (endIndex - startIndex)/2;
+            if (nums[middleIndex] == target) {
+                return middleIndex;
+            } else if (nums[middleIndex] > target) {
+                endIndex = middleIndex - 1;
+            } else {
+                startIndex = middleIndex + 1;
             }
         }
-        return i;
+        return startIndex;
     }
 }
