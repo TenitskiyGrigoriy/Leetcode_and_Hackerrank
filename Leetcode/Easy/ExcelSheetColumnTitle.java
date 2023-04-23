@@ -15,7 +15,6 @@ public class ExcelSheetColumnTitle {
 
             output.append(c);
         }
-
         output.reverse();
         return output.toString();
     }
