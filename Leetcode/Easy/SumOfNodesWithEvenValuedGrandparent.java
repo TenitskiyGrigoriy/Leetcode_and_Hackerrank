@@ -1,4 +1,4 @@
-package Leetcode_and_Hackerrank.Leetcode.Medium;
+package Leetcode_and_Hackerrank.Leetcode.Easy;
 
 /**
  * You are given two binary trees root1 and root2.
